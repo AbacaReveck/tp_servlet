@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC '-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN' 'http://java.sun.com/dtd/web-app_2_3.dtd'>
+
+
+<web-app>
+
+	<servlet>
+		<servlet-name>GetUserName</servlet-name>
+		<servlet-class>ServletCode.GetUserName</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>EditCookies</servlet-name>
+		<servlet-class>ServletCode.EditCookies</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>DisplayName</servlet-name>
+		<servlet-class>ServletCode.DisplayName</servlet-class>
+
+		<init-param>
+			<param-name>defaultName</param-name>
+			<param-value>Rim</param-value>
+		</init-param>
+	</servlet>
+
+
+	<servlet-mapping>
+		<servlet-name>GetUserName</servlet-name>
+		<url-pattern>/getusername</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>EditCookies</servlet-name>
+		<url-pattern>/editcookies</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>DisplayName</servlet-name>
+		<url-pattern>/displayname</url-pattern>
+	</servlet-mapping>
+
+</web-app>

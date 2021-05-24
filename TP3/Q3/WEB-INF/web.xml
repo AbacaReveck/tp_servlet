@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC '-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN' 'http://java.sun.com/dtd/web-app_2_3.dtd'>
+
+
+<web-app>
+
+	<servlet>
+		<servlet-name>GetUserName</servlet-name>
+		<servlet-class>ServletCode.GetUserName</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>GetInfo</servlet-name>
+		<servlet-class>ServletCode.GetInfo</servlet-class>
+	</servlet>
+
+	<servlet>
+		<servlet-name>DisplayInfo</servlet-name>
+		<servlet-class>ServletCode.DisplayInfo</servlet-class>
+	</servlet>
+
+
+	<servlet-mapping>
+		<servlet-name>GetUserName</servlet-name>
+		<url-pattern>/getusername</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>GetInfo</servlet-name>
+		<url-pattern>/getinfo</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>DisplayInfo</servlet-name>
+		<url-pattern>/displayinfo</url-pattern>
+	</servlet-mapping>
+
+</web-app>
